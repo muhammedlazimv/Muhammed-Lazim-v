@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-fixed-dim": "#b4c5ff", "surface-bright": "#353943", "on-secondary-fixed-variant": "#5a00c6", "outline-variant": "#434655", "surface-tint": "#b4c5ff", "surface-variant": "#31353f", "secondary-fixed": "#eaddff", "on-secondary-container": "#c9aeff", "secondary-fixed-dim": "#d2bbff", "tertiary-fixed-dim": "#ddb8ff", "surface-container-lowest": "#0a0e17", "outline": "#8d90a0", "primary": "#b4c5ff", "on-primary": "#002a78", "on-error": "#690005", "on-tertiary-fixed-variant": "#6800b4", "on-surface-variant": "#c3c6d7", "tertiary-fixed": "#f0dbff", "inverse-surface": "#dfe2ef", "on-tertiary-fixed": "#2c0051", "secondary": "#d2bbff", "primary-container": "#2563eb", "inverse-on-surface": "#2c303a", "on-primary-container": "#eeefff", "error-container": "#93000a", "on-secondary": "#3f008e", "primary-fixed": "#dbe1ff", "surface-container": "#1c1f29", "on-secondary-fixed": "#25005a", "tertiary": "#ddb8ff", "on-surface": "#dfe2ef", "on-background": "#dfe2ef", "on-tertiary-container": "#f9ecff", "secondary-container": "#6001d1", "surface": "#0f131c", "surface-dim": "#0f131c", "surface-container-highest": "#31353f", "on-tertiary": "#490080", "error": "#ffb4ab", "on-error-container": "#ffdad6", "on-primary-fixed": "#00174b", "inverse-primary": "#0053db", "background": "#0f131c", "on-primary-fixed-variant": "#003ea8", "surface-container-low": "#181b25", "tertiary-container": "#9637ed", "surface-container-high": "#262a34" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "margin-mobile": "1.25rem", "margin": "3rem" }, "fontFamily": { "headline-lg": [ "Plus Jakarta Sans" ], "body-sm": [ "Inter" ], "headline-md": [ "Plus Jakarta Sans" ], "code-inline": [ "JetBrains Mono" ], "headline-xl-mobile": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ], "label-md": [ "Inter" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ], "body-lg": [ "Inter" ], "label-sm": [ "Inter" ], "headline-sm": [ "Plus Jakarta Sans" ], "headline-xl": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "code-inline": [ "13px", { "lineHeight": "20px", "fontWeight": "500" } ], "headline-xl-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-xl": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" } ] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/70 backdrop-blur-2xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group focus:outline-none" data-path="about" href="#"><div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center shadow-inner group-hover:bg-primary-container transition-colors duration-300"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary group-hover:text-on-primary-container transition-colors">ML</span></div><div class="hidden sm:flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface leading-none">Muhammed Lazim V</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-0.5">Engineer &amp; Architect</span></div></a></div><nav class="hidden lg:flex items-center gap-space-xs p-1 rounded-xl bg-surface-container-lowest/60 backdrop-blur-md" data-active-classes="text-on-surface bg-surface-container font-semibold rounded-lg shadow-sm"><a aria-current="page" class="px-space-md py-2 transition-colors text-on-surface bg-surface-container font-semibold rounded-lg shadow-sm" data-path="about" href="#">About</a><a class="px-space-md py-2 text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors" data-path="education" href="#">Education</a><a class="px-space-md py-2 text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors" data-path="skills" href="#">Skills</a><a class="px-space-md py-2 text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors" data-path="projects" href="#">Projects</a><a class="px-space-md py-2 text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-sm"><button aria-label="Toggle Color Theme" class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors focus:outline-none" onclick="document.documentElement.classList.toggle('dark')" type="button"><span class="material-symbols-outlined text-[20px] dark:hidden">dark_mode</span><span class="material-symbols-outlined text-[20px] hidden dark:inline">light_mode</span></button><a class="hidden sm:inline-flex items-center justify-center px-space-lg py-2.5 rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md shadow-[0_0_20px_rgba(37,99,235,0.35)] hover:shadow-[0_0_24px_rgba(37,99,235,0.6)] hover:bg-primary hover:text-on-primary transition-all duration-200" data-path="contact" href="#">Get In Touch</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtHobYANpkEAXTO2oH7UB4g60QX_P03QWhd-Fxx4cV79CVWbv6tx5TDu6rFnpqjlf3uvBLwdm8qd17dNLtkkS3V_6V3ZNC_zjZiPwkq5KErQWGIzCJ6PBvE_RFcXtW8iW5imGH7G2ROSO11-OuS7P2UYy0q-unIaVIggDArJj6ziO-zn7ecZcg6-SSL5qtl2NbUJhRkIHnMUvtMNbzQMBxnxwg0nwaItqnwAH-E8Cs"/><button aria-label="Toggle Navigation Menu" class="lg:hidden w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors focus:outline-none" onclick="document.getElementById('mobile-drawer').classList.toggle('hidden')" type="button"><span class="material-symbols-outlined">menu</span></button></div></div><div class="hidden lg:hidden bg-surface-container-lowest/95 backdrop-blur-2xl shadow-xl px-margin-mobile py-space-lg" id="mobile-drawer"><nav class="flex flex-col gap-space-xs" data-active-classes="text-on-surface bg-surface-container font-semibold"><a aria-current="page" class="px-space-md py-3 rounded-lg transition-colors text-on-surface bg-surface-container font-semibold" data-path="about" href="#">About</a><a class="px-space-md py-3 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="education" href="#">Education</a><a class="px-space-md py-3 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="skills" href="#">Skills</a><a class="px-space-md py-3 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="projects" href="#">Projects</a><a class="px-space-md py-3 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a><div class="pt-space-md mt-space-xs"><a class="flex w-full items-center justify-center px-space-lg py-3 rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors" data-path="contact" href="#">Get In Touch</a></div></nav></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Subtle ambient cosmic aura mesh (contained) -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[850px] h-[450px] bg-gradient-to-tr from-primary-container/15 via-secondary-container/20 to-tertiary-container/10 blur-[130px] pointer-events-none rounded-full"></div>
+<div class="absolute top-[800px] -left-48 w-[500px] h-[500px] bg-primary/10 blur-[140px] pointer-events-none rounded-full"></div>
+<div class="absolute top-[1800px] -right-48 w-[550px] h-[550px] bg-secondary/10 blur-[150px] pointer-events-none rounded-full"></div>
+<!-- 1. HERO SECTION -->
+<section class="relative max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-12 pb-24 lg:pt-16 lg:pb-32 flex flex-col items-center text-center" id="hero">
+<!-- Status Badge -->
+<div class="inline-flex items-center gap-space-sm px-space-md py-1.5 rounded-full bg-surface-container-high/70 backdrop-blur-xl shadow-md mb-8">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+</span>
+<span class="font-label-sm text-label-sm tracking-wide text-on-surface uppercase">Available for Opportunities</span>
+</div>
+<!-- Animated Profile Photo Container with glowing rim -->
+<div class="relative mb-10 group">
+<div class="absolute -inset-2 rounded-full bg-gradient-to-r from-primary-container via-secondary-container to-tertiary-container blur-lg opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-300 animate-pulse"></div>
+<div class="relative p-1.5 rounded-full bg-surface-container-highest shadow-2xl">
+<div class="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden bg-surface-container-low shadow-inner">
+<img alt="Muhammed Lazim V - B.Sc. Computer Science Student portrait" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtHobYANpkEAXTO2oH7UB4g60QX_P03QWhd-Fxx4cV79CVWbv6tx5TDu6rFnpqjlf3uvBLwdm8qd17dNLtkkS3V_6V3ZNC_zjZiPwkq5KErQWGIzCJ6PBvE_RFcXtW8iW5imGH7G2ROSO11-OuS7P2UYy0q-unIaVIggDArJj6ziO-zn7ecZcg6-SSL5qtl2NbUJhRkIHnMUvtMNbzQMBxnxwg0nwaItqnwAH-E8Cs"/>
+</div>
+</div>
+</div>
+<!-- Hero Typography & Rotating Title -->
+<div class="max-w-3xl mx-auto flex flex-col items-center">
+<h1 class="font-headline-xl text-headline-xl md:text-[64px] text-on-surface tracking-tight mb-3">
+          Muhammed <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Lazim V</span>
+</h1>
+<p class="font-headline-md text-headline-md text-primary font-semibold tracking-tight mb-4">
+          B.Sc. Computer Science Student
+        </p>
+<!-- Typing Animation Display -->
+<div class="h-10 flex items-center justify-center gap-1.5 font-code-inline text-code-inline text-on-surface-variant bg-surface-container-lowest/80 px-4 py-2 rounded-xl shadow-inner mb-6">
+<span class="material-symbols-outlined text-[18px] text-primary">terminal</span>
+<span class="text-primary font-semibold">I am an</span>
+<span class="text-on-surface font-semibold text-body-md" id="typed-text"></span>
+<span class="w-2 h-4 bg-primary animate-pulse ml-0.5"></span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed mb-10">
+          Passionate about web development, modern software technologies, and crafting elegant digital experiences from Kuzhimanna, Kerala, India.
+        </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center justify-center gap-space-md mb-12">
+<a class="inline-flex items-center gap-space-sm px-space-xl py-3.5 rounded-xl bg-gradient-to-r from-primary-container to-secondary-container text-on-primary-container font-label-md text-label-md shadow-[0_0_28px_rgba(37,99,235,0.4)] hover:shadow-[0_0_36px_rgba(124,58,237,0.6)] hover:-translate-y-0.5 transition-all duration-200" href="#projects">
+<span>View My Work</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="inline-flex items-center gap-space-sm px-space-xl py-3.5 rounded-xl bg-surface-container-high/60 backdrop-blur-xl text-on-surface hover:text-primary hover:bg-surface-container-highest transition-all duration-200 font-label-md text-label-md shadow-md" href="#contact">
+<span>Contact Me</span>
+<span class="material-symbols-outlined text-[18px]">chat_bubble_outline</span>
+</a>
+</div>
+<!-- Quick Stats Pills -->
+<div class="flex flex-wrap justify-center items-center gap-3">
+<div class="inline-flex items-center gap-2 px-space-md py-2 rounded-full bg-surface-container-low/80 backdrop-blur-md shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">school</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1st Year B.Sc CS</span>
+</div>
+<div class="inline-flex items-center gap-2 px-space-md py-2 rounded-full bg-surface-container-low/80 backdrop-blur-md shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kuzhimanna, Kerala</span>
+</div>
+<div class="inline-flex items-center gap-2 px-space-md py-2 rounded-full bg-surface-container-low/80 backdrop-blur-md shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">bolt</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">100% Dedicated &amp; Curious</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. ABOUT ME SECTION -->
+<section class="relative max-w-7xl mx-auto px-margin-mobile lg:px-margin py-16 lg:py-24" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left: Context & Text -->
+<div class="lg:col-span-6 flex flex-col items-start">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider mb-4">
+<span class="material-symbols-outlined text-[14px]">person</span>
+<span>About Me</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6 leading-tight">
+            Driven by Curiosity, Grounded in Problem-Solving
+          </h2>
+<div class="p-6 rounded-2xl bg-surface-container/70 backdrop-blur-xl shadow-xl mb-6 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-primary to-secondary"></div>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed pl-2">
+              "I am a dedicated Computer Science student passionate about web development, UI design, and modern software technologies. I love building responsive websites, solving real-world problems, working with people, and continuously developing my knowledge and skills."
+            </p>
+</div>
+<div class="flex flex-wrap gap-4 pt-2">
+<a class="inline-flex items-center gap-space-sm px-6 py-3 rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all shadow-md" href="#contact">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Let's Connect</span>
+</a>
+<a class="inline-flex items-center gap-space-sm px-6 py-3 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-all shadow-md" href="mailto:vambadens2@gmail.com">
+<span class="material-symbols-outlined text-[18px]">contact_page</span>
+<span>Download CV</span>
+</a>
+</div>
+</div>
+<!-- Right: Bento Cards Highlight -->
+<div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="p-6 rounded-2xl bg-surface-container-low/90 backdrop-blur-xl shadow-lg flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[26px]">pin_drop</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-1">Location</span>
+<p class="font-headline-sm text-headline-sm text-on-surface">Kuzhimanna, Kerala, India</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 block">Malappuram District</span>
+</div>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-low/90 backdrop-blur-xl shadow-lg flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 text-secondary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[26px]">account_balance</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-1">College</span>
+<p class="font-headline-sm text-headline-sm text-on-surface">Regional College</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 block">Kuzhimanna Campus</span>
+</div>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-low/90 backdrop-blur-xl shadow-lg flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[26px]">history_edu</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-1">University</span>
+<p class="font-headline-sm text-headline-sm text-on-surface">Calicut University</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 block">Kerala, India</span>
+</div>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-low/90 backdrop-blur-xl shadow-lg flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary-fixed-dim flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[26px]">devices</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-1">Core Passion</span>
+<p class="font-headline-sm text-headline-sm text-on-surface leading-tight">Modern UI/UX</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 block">&amp; Responsive Web Development</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. EDUCATION TIMELINE SECTION -->
+<section class="relative max-w-7xl mx-auto px-margin-mobile lg:px-margin py-16 lg:py-24" id="education">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wider mb-4">
+<span class="material-symbols-outlined text-[14px]">school</span>
+<span>Academic Background</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-3">
+          My Educational Journey
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Solidifying foundations in Computer Science and natural sciences across academic milestones.
+        </p>
+</div>
+<div class="relative max-w-4xl mx-auto">
+<!-- Connecting central vertical bar -->
+<div class="absolute left-4 sm:left-1/2 top-4 bottom-4 -translate-x-1/2 w-0.5 bg-gradient-to-b from-primary via-secondary to-surface-variant"></div>
+<div class="flex flex-col gap-12 sm:gap-16">
+<!-- Timeline Item 1 (Present) -->
+<div class="relative flex flex-col sm:flex-row items-start group">
+<div class="sm:w-1/2 sm:pr-10 sm:text-right pl-12 sm:pl-0 order-2 sm:order-1">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm mb-2 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Currently Pursuing</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">B.Sc. Computer Science (1st Year)</h3>
+<p class="font-body-md text-body-md text-primary mt-1">Regional College, Kuzhimanna</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Affiliated with Calicut University</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 mt-2">
+                Focused on core computational thinking, algorithmic analysis, modern web standards, and software architecture fundamentals.
+              </p>
+</div>
+<!-- Node Marker -->
+<div class="absolute left-4 sm:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shadow-[0_0_16px_rgba(37,99,235,0.6)] z-10 order-1 sm:order-2">
+<div class="w-3.5 h-3.5 rounded-full bg-primary animate-pulse"></div>
+</div>
+<div class="sm:w-1/2 sm:pl-10 pl-12 sm:pl-0 mt-2 sm:mt-0 order-3">
+<span class="font-headline-md text-headline-md font-bold text-primary/40 block">Present</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Undergraduate Degree</span>
+</div>
+</div>
+<!-- Timeline Item 2 (2026 / Higher Secondary) -->
+<div class="relative flex flex-col sm:flex-row items-start group">
+<div class="sm:w-1/2 sm:pr-10 sm:text-right pl-12 sm:pl-0 mt-2 sm:mt-0 order-2 sm:order-1 sm:block hidden">
+<span class="font-headline-md text-headline-md font-bold text-secondary/40 block">2026</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Higher Secondary Education</span>
+</div>
+<!-- Node Marker -->
+<div class="absolute left-4 sm:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shadow-[0_0_16px_rgba(124,58,237,0.4)] z-10">
+<div class="w-3.5 h-3.5 rounded-full bg-secondary"></div>
+</div>
+<div class="sm:w-1/2 sm:pl-10 pl-12 sm:pl-0 order-2">
+<div class="sm:hidden block mb-1">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">2026</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Higher Secondary – Plus Two Science</h3>
+<p class="font-body-md text-body-md text-secondary mt-1">GHSS Kuzhimanna</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Science Stream</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 mt-2">
+                Specialized in Physics, Chemistry, Mathematics, and Computer Science concepts, developing sharp mathematical and analytical rigor.
+              </p>
+</div>
+</div>
+<!-- Timeline Item 3 (2024 / SSLC) -->
+<div class="relative flex flex-col sm:flex-row items-start group">
+<div class="sm:w-1/2 sm:pr-10 sm:text-right pl-12 sm:pl-0 order-2 sm:order-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">SSLC (Secondary School Leaving Certificate)</h3>
+<p class="font-body-md text-body-md text-tertiary mt-1">GHSS Kuzhimanna</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Class 10 Milestone (2024)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 mt-2">
+                Concluded foundational schooling with strong academic achievements, actively participating in science clubs and co-curricular programs.
+              </p>
+</div>
+<!-- Node Marker -->
+<div class="absolute left-4 sm:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shadow-md z-10 order-1 sm:order-2">
+<div class="w-3.5 h-3.5 rounded-full bg-tertiary"></div>
+</div>
+<div class="sm:w-1/2 sm:pl-10 pl-12 sm:pl-0 mt-2 sm:mt-0 order-3">
+<span class="font-headline-md text-headline-md font-bold text-tertiary/40 block">2024</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Secondary School</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. SKILLS & PERSONAL STRENGTHS SECTION (7 EXACT PERSONAL SKILLS ONLY) -->
+<section class="relative max-w-7xl mx-auto px-margin-mobile lg:px-margin py-16 lg:py-24" id="skills">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm uppercase tracking-wider mb-4">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+<span>Personal Strengths</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-3">
+          Professional &amp; Personal Skills
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Core interpersonal capabilities, leadership traits, and analytical competencies that drive execution excellence.
+        </p>
+</div>
+<!-- 7 Glassmorphic Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<!-- 1. Leadership Skills -->
+<div class="p-6 rounded-2xl bg-surface-container/80 backdrop-blur-xl shadow-lg hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[26px]">groups</span>
+</div>
+<!-- Radial mastery svg -->
+<svg class="w-11 h-11 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-primary stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="90, 100" stroke-linecap="round" stroke-width="3"></path>
+<text class="fill-current text-on-surface font-headline-sm text-[9px] text-center" text-anchor="middle" x="18" y="20.5">90%</text>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Leadership Skills</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Capable of guiding peer initiatives, coordinating group tasks, and inspiring cohesive teamwork toward shared goals.
+            </p>
+</div>
+<div class="pt-4 mt-4 border-none flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Strength</span>
+<span class="material-symbols-outlined text-[18px] text-primary">arrow_forward</span>
+</div>
+</div>
+<!-- 2. Communication Skills -->
+<div class="p-6 rounded-2xl bg-surface-container/80 backdrop-blur-xl shadow-lg hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 text-secondary flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[26px]">chat</span>
+</div>
+<svg class="w-11 h-11 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-secondary stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="92, 100" stroke-linecap="round" stroke-width="3"></path>
+<text class="fill-current text-on-surface font-headline-sm text-[9px]" text-anchor="middle" x="18" y="20.5">92%</text>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Communication Skills</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Clear articulation of conceptual ideas, active listening, and thoughtful verbal and written dialogue across diverse audiences.
+            </p>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Articulation</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">arrow_forward</span>
+</div>
+</div>
+<!-- 3. Problem-Solving Skills -->
+<div class="p-6 rounded-2xl bg-surface-container/80 backdrop-blur-xl shadow-lg hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[26px]">extension</span>
+</div>
+<svg class="w-11 h-11 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-tertiary stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="95, 100" stroke-linecap="round" stroke-width="3"></path>
+<text class="fill-current text-on-surface font-headline-sm text-[9px]" text-anchor="middle" x="18" y="20.5">95%</text>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Problem-Solving Skills</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Deconstructing multifaceted technical challenges into practical, logical steps with persistence and analytical creativity.
+            </p>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">Analytical</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">arrow_forward</span>
+</div>
+</div>
+<!-- 4. Decision-Making Skills -->
+<div class="p-6 rounded-2xl bg-surface-container/80 backdrop-blur-xl shadow-lg hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[26px]">explore</span>
+</div>
+<svg class="w-11 h-11 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-primary stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="88, 100" stroke-linecap="round" stroke-width="3"></path>
+<text class="fill-current text-on-surface font-headline-sm text-[9px]" text-anchor="middle" x="18" y="20.5">88%</text>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Decision-Making Skills</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Evaluating trade-offs systematically, balancing deadlines with quality, and selecting optimal paths forward with conviction.
+            </p>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Strategic</span>
+<span class="material-symbols-outlined text-[18px] text-primary">arrow_forward</span>
+</div>
+</div>
+<!-- 5. Teamwork -->
+<div class="p-6 rounded-2xl bg-surface-container/80 backdrop-blur-xl shadow-lg hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 text-secondary flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[26px]">handshake</span>
+</div>
+<svg class="w-11 h-11 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-secondary stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="94, 100" stroke-linecap="round" stroke-width="3"></path>
+<text class="fill-current text-on-surface font-headline-sm text-[9px]" text-anchor="middle" x="18" y="20.5">94%</text>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Teamwork</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Thriving in collaborative environments, valuing peer contributions, and supporting teammates to achieve collective outcomes.
+            </p>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Collaborative</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">arrow_forward</span>
+</div>
+</div>
+<!-- 6. Time Management -->
+<div class="p-6 rounded-2xl bg-surface-container/80 backdrop-blur-xl shadow-lg hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[26px]">schedule</span>
+</div>
+<svg class="w-11 h-11 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-tertiary stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="90, 100" stroke-linecap="round" stroke-width="3"></path>
+<text class="fill-current text-on-surface font-headline-sm text-[9px]" text-anchor="middle" x="18" y="20.5">90%</text>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Time Management</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Disciplined prioritization of academic deliverables, self-directed study schedules, and balancing multiple priorities.
+            </p>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">Efficiency</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">arrow_forward</span>
+</div>
+</div>
+<!-- 7. Hardworking & Self-Motivation -->
+<div class="p-6 rounded-2xl bg-surface-container/80 backdrop-blur-xl shadow-lg hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group md:col-span-2 lg:col-span-3 xl:col-span-2">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-primary-container to-secondary-container text-on-primary-container flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[26px]">local_fire_department</span>
+</div>
+<svg class="w-11 h-11 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-primary stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="98, 100" stroke-linecap="round" stroke-width="3"></path>
+<text class="fill-current text-on-surface font-headline-sm text-[9px]" text-anchor="middle" x="18" y="20.5">98%</text>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Hardworking &amp; Self-Motivation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Relentless internal drive to master new domains, continuous daily self-learning habits, and unyielding determination in tackling complex objectives.
+            </p>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Intrinsic Drive</span>
+<span class="material-symbols-outlined text-[18px] text-primary">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. FEATURED PROJECTS SECTION -->
+<section class="relative max-w-7xl mx-auto px-margin-mobile lg:px-margin py-16 lg:py-24" id="projects">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider mb-4">
+<span class="material-symbols-outlined text-[14px]">rocket_launch</span>
+<span>Featured Work</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-3">
+          Crafted with Passion &amp; Precision
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Hands-on implementation highlighting thoughtful modern user interfaces, adaptive layouts, and polished aesthetics.
+        </p>
+</div>
+<!-- Featured Project Showcase -->
+<div class="max-w-4xl mx-auto">
+<div class="rounded-3xl bg-surface-container/90 backdrop-blur-2xl shadow-2xl overflow-hidden hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300">
+<!-- Window chrome bar -->
+<div class="px-6 py-4 bg-surface-container-highest/80 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-amber-400"></span>
+<span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+<span class="ml-4 font-code-inline text-code-inline text-on-surface-variant text-xs">portfolio.lazim.dev</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-label-sm text-[10px] uppercase font-bold tracking-wider">Live &amp; Responsive</span>
+</div>
+</div>
+<!-- Project Content Split -->
+<div class="p-8 lg:p-10 flex flex-col lg:flex-row gap-8 items-center">
+<!-- Simulated Interface Preview Graphic -->
+<div class="w-full lg:w-1/2 rounded-2xl bg-surface-container-lowest p-6 shadow-inner relative group overflow-hidden">
+<div class="absolute -right-8 -top-8 w-40 h-40 bg-primary/20 rounded-full blur-2xl"></div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center font-bold text-on-primary-container text-xs">ML</div>
+<div class="flex gap-2">
+<div class="w-12 h-2 rounded bg-surface-container-highest"></div>
+<div class="w-12 h-2 rounded bg-surface-container-highest"></div>
+</div>
+</div>
+<div class="space-y-3 mb-6">
+<div class="w-3/4 h-5 rounded bg-surface-container-high"></div>
+<div class="w-1/2 h-3 rounded bg-surface-variant"></div>
+<div class="w-full h-2 rounded bg-surface-variant"></div>
+<div class="w-5/6 h-2 rounded bg-surface-variant"></div>
+</div>
+<!-- Interactive Card Visual -->
+<div class="p-4 rounded-xl bg-surface-container-high/60 backdrop-blur-md shadow-md flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+</div>
+<div class="flex-1">
+<div class="font-headline-sm text-sm text-on-surface font-semibold">Glassmorphic UI</div>
+<div class="font-body-sm text-xs text-on-surface-variant">Full Dark &amp; Light Engine</div>
+</div>
+</div>
+</div>
+<!-- Project Details -->
+<div class="w-full lg:w-1/2 flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold block mb-2">Showcase Project</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-3">Personal Portfolio Website</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+                  "Designed and developed a fully responsive personal portfolio featuring dark mode, dynamic elements, and interactive contact forms."
+                </p>
+<!-- Tags -->
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-code-inline text-code-inline text-xs shadow-sm">
+                    Responsive Design
+                  </span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-code-inline text-code-inline text-xs shadow-sm">
+                    Dark &amp; Light Mode
+                  </span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-code-inline text-code-inline text-xs shadow-sm">
+                    Interactive UI
+                  </span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-code-inline text-code-inline text-xs shadow-sm">
+                    Glassmorphism
+                  </span>
+</div>
+</div>
+<!-- Action buttons -->
+<div class="flex flex-wrap items-center gap-4">
+<button class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-primary hover:text-on-primary shadow-lg transition-all" onclick="openProjectModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>Live Demo</span>
+</button>
+<button class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-all shadow-md" onclick="openProjectModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">info</span>
+<span>View Details</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Modal Dialog (Interactive) -->
+<div class="fixed inset-0 z-50 hidden bg-surface-container-lowest/80 backdrop-blur-xl flex items-center justify-center p-4" id="project-modal">
+<div class="max-w-xl w-full rounded-2xl bg-surface-container p-6 shadow-2xl relative">
+<button class="absolute top-4 right-4 w-9 h-9 rounded-xl bg-surface-container-high text-on-surface flex items-center justify-center hover:bg-surface-container-highest" onclick="closeProjectModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/20 text-primary font-label-sm text-xs mb-3">
+<span>Project Preview</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Personal Portfolio Website</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+            Designed and developed as a complete showcase for academic and personal growth. Engineered with semantic HTML5, high-end Tailwind styling, bespoke typed animations, and accessible contact conduits.
+          </p>
+<div class="p-4 rounded-xl bg-surface-container-low mb-6">
+<h4 class="font-label-md text-label-md text-on-surface mb-2 font-semibold">Key Highlights:</h4>
+<ul class="font-body-sm text-body-sm text-on-surface-variant space-y-1.5 list-disc list-inside">
+<li>100% mobile-first fluid layout adaptation</li>
+<li>Cosmic glassmorphism &amp; frosted specular aesthetic</li>
+<li>Instant responsive contact gateway with WhatsApp link</li>
+<li>Dynamic typed script hero &amp; personal strength indicators</li>
+</ul>
+</div>
+<div class="flex justify-end gap-3">
+<button class="px-5 py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md" onclick="closeProjectModal()">
+              Close Preview
+            </button>
+<a class="px-5 py-2.5 rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md" href="#hero" onclick="closeProjectModal()">
+              Back To Top
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. CONTACT SECTION -->
+<section class="relative max-w-7xl mx-auto px-margin-mobile lg:px-margin py-16 lg:py-24" id="contact">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider mb-4">
+<span class="material-symbols-outlined text-[14px]">mail</span>
+<span>Get In Touch</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-3">
+          Let's Connect &amp; Build Together
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Have an opportunity, questions about my studies, or want to collaborate? I'd love to hear from you.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start max-w-6xl mx-auto">
+<!-- Direct Contact Cards -->
+<div class="lg:col-span-5 flex flex-col gap-4">
+<!-- WhatsApp Special Action Card -->
+<a class="p-6 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-surface-container to-surface-container backdrop-blur-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-between group" href="https://wa.me/917907737387" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+<!-- WhatsApp Brand Icon SVG -->
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+<path d="M12.031 2C6.516 2 2.03 6.486 2.03 12c0 2.164.693 4.168 1.869 5.803L2 22l4.336-1.849C7.892 21.144 9.904 22 12.031 22c5.516 0 10.002-4.486 10.002-10s-4.486-10-10.002-10zm5.834 14.172c-.244.686-1.42 1.314-1.968 1.378-.516.062-1.189.091-3.645-.924-3.136-1.296-5.143-4.483-5.299-4.692-.153-.209-1.267-1.688-1.267-3.218 0-1.53.799-2.285 1.082-2.597.284-.312.623-.39.83-.39.208 0 .416.002.598.012.193.01.452-.073.708.54.262.625.897 2.191.975 2.35.078.158.13.344.026.552-.104.208-.156.338-.312.52-.156.182-.328.406-.468.545-.157.156-.32.327-.138.64.182.312.81 1.336 1.737 2.162 1.192 1.062 2.196 1.391 2.508 1.547.312.156.494.13.676-.078.182-.208.78-1.04 1.014-1.378.234-.338.468-.286.78-.182.312.104 1.975.931 2.313 1.1.338.169.563.252.645.39.083.138.083.802-.161 1.488z"></path>
+</svg>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-emerald-400 font-bold uppercase tracking-wider block">Instant Chat</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold block">+91 7907737387</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-emerald-500/20 text-emerald-300 font-label-sm text-label-sm font-semibold">
+              Chat on WhatsApp
+            </span>
+</a>
+<!-- Email Direct Card -->
+<a class="p-6 rounded-2xl bg-surface-container/80 backdrop-blur-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-between group" href="mailto:vambadens2@gmail.com">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">alternate_email</span>
+</div>
+<div class="overflow-hidden">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider block">Email Address</span>
+<span class="font-headline-sm text-sm sm:text-base text-on-surface font-semibold truncate block">vambadens2@gmail.com</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">launch</span>
+</a>
+<!-- Phone Direct Card -->
+<a class="p-6 rounded-2xl bg-surface-container/80 backdrop-blur-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-between group" href="tel:+917907737387">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 text-secondary flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">call</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider block">Direct Phone</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold block">+91 7907737387</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors">launch</span>
+</a>
+<!-- Location Information -->
+<div class="p-6 rounded-2xl bg-surface-container/80 backdrop-blur-xl shadow-lg flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">location_on</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider block">Location</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold block">Kuzhimanna, Kerala, India</span>
+</div>
+</div>
+<!-- Social Quick Links -->
+<div class="p-6 rounded-2xl bg-surface-container/80 backdrop-blur-xl shadow-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider block mb-3">Connect Online</span>
+<div class="flex flex-wrap gap-3">
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-high text-on-surface hover:text-primary hover:bg-surface-container-highest transition-all font-label-md text-label-md" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">link</span>
+<span>LinkedIn</span>
+</a>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-high text-on-surface hover:text-emerald-400 hover:bg-surface-container-highest transition-all font-label-md text-label-md" href="https://wa.me/917907737387" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>WhatsApp</span>
+</a>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-high text-on-surface hover:text-secondary hover:bg-surface-container-highest transition-all font-label-md text-label-md" href="mailto:vambadens2@gmail.com">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+<span>Email</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Interactive Contact Form -->
+<div class="lg:col-span-7 p-8 rounded-3xl bg-surface-container/90 backdrop-blur-2xl shadow-xl">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-2">Send a Message</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+            Fill out the form below and I will respond to your inquiry as soon as possible.
+          </p>
+<form class="space-y-4" id="contact-form" onsubmit="handleContactSubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1.5 font-medium" for="form-name">Full Name</label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="form-name" placeholder="e.g. Alex Johnson" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1.5 font-medium" for="form-email">Email Address</label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="form-email" placeholder="alex@example.com" required="" type="email"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1.5 font-medium" for="form-subject">Subject</label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="form-subject" placeholder="Collaboration / Project Inquiry / Greeting" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1.5 font-medium" for="form-message">Message</label>
+<textarea class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner resize-y" id="form-message" placeholder="Share your thoughts or proposal here..." required="" rows="5"></textarea>
+</div>
+<button class="w-full py-4 rounded-xl bg-gradient-to-r from-primary-container via-secondary-container to-tertiary-container text-on-primary-container font-label-md text-label-md font-bold shadow-[0_0_24px_rgba(37,99,235,0.4)] hover:shadow-[0_0_32px_rgba(124,58,237,0.6)] hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-2" id="submit-btn" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span id="btn-text">Send Message</span>
+</button>
+</form>
+<!-- Success Alert Toast (Hidden by default) -->
+<div class="hidden mt-6 p-4 rounded-2xl bg-emerald-950/80 text-emerald-200 backdrop-blur-xl shadow-lg flex items-center gap-3" id="contact-success-toast">
+<span class="material-symbols-outlined text-[24px] text-emerald-400">check_circle</span>
+<div class="flex-1 font-body-sm text-body-sm">
+<span class="font-bold block text-emerald-300">Message Transmitted!</span>
+              Thank you for reaching out. Muhammed Lazim V will respond via email shortly.
+            </div>
+<button class="text-emerald-300 hover:text-white" onclick="document.getElementById('contact-success-toast').classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Typed Text Effect for Hero Title Cycling
+  const phrases = [
+    "Computer Science Student",
+    "Aspiring Web Developer",
+    "Creative Thinker"
+  ];
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const typedTarget = document.getElementById("typed-text");
+
+  function typeCycle() {
+    if (!typedTarget) return;
+    const currentPhrase = phrases[phraseIndex];
+    
+    if (isDeleting) {
+      typedTarget.textContent = currentPhrase.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      typedTarget.textContent = currentPhrase.substring(0, charIndex + 1);
+      charIndex++;
+    }
+
+    let typeSpeed = isDeleting ? 40 : 90;
+
+    if (!isDeleting && charIndex === currentPhrase.length) {
+      typeSpeed = 1800; // Pause at full word
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      typeSpeed = 400; // Pause before new word
+    }
+
+    setTimeout(typeCycle, typeSpeed);
+  }
+
+  // Smooth scroll delegation for internal anchors
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId && targetId.length > 1) {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }
+    });
+  });
+
+  // Project Modal Handlers
+  function openProjectModal() {
+    const modal = document.getElementById('project-modal');
+    if (modal) modal.classList.remove('hidden');
+  }
+
+  function closeProjectModal() {
+    const modal = document.getElementById('project-modal');
+    if (modal) modal.classList.add('hidden');
+  }
+
+  // Contact Form Submission Simulation
+  function handleContactSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    const btnText = document.getElementById('btn-text');
+    const toast = document.getElementById('contact-success-toast');
+
+    if (btn && btnText) {
+      btn.disabled = true;
+      btnText.textContent = "Sending Transmission...";
+      
+      setTimeout(() => {
+        btn.disabled = false;
+        btnText.textContent = "Send Message";
+        document.getElementById('contact-form').reset();
+        if (toast) {
+          toast.classList.remove('hidden');
+        }
+      }, 1000);
+    }
+  }
+
+  // Initialize interactive cycling once DOM is ready
+  document.addEventListener("DOMContentLoaded", () => {
+    typeCycle();
+  });
+  if (document.readyState === "complete" || document.readyState === "interactive") {
+    typeCycle();
+  }
+</script></main><footer class="w-full bg-surface-container-lowest mt-space-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-xl flex flex-col gap-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg items-start"><div class="md:col-span-5 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center"><span class="font-headline-sm text-headline-sm font-bold text-primary">ML</span></div><span class="font-headline-sm text-headline-sm font-bold text-on-surface">Muhammed Lazim V</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Crafting state-of-the-art software architectures, high-performance distributed systems, and refined digital touchpoints with uncompromised engineering precision.</p></div><div class="md:col-span-3 flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider mb-space-xs">Navigation</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="education" href="#">Education</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="skills" href="#">Skills</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="projects" href="#">Projects</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></div><div class="md:col-span-4 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Direct Connect</span><p class="font-body-sm text-body-sm text-on-surface-variant">Open for principal advisory roles, technical leadership, and collaborative product engineering.</p><div class="flex flex-wrap items-center gap-space-sm"><a class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-label-sm text-label-sm" href="https://linkedin.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">link</span><span>LinkedIn</span></a><a class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-label-sm text-label-sm" href="https://whatsapp.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">chat</span><span>WhatsApp</span></a><a class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-label-sm text-label-sm" href="mailto:contact@lazim.dev"><span class="material-symbols-outlined text-[16px]">mail</span><span>Email</span></a></div></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 Muhammed Lazim V. All rights reserved.</p><p class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>Available for specialized engagements</p></div></div></footer></body></html>
